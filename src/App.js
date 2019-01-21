@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { calculator } from './classes/Calculator';
+import { Calculator } from './classes/Calculator';
 
 class App extends Component {
   render() {
-    calculator._result = 1;
-    return <h1>{calculator.getResult()}</h1>;
+    return <h1>{Calculator.getResult()}</h1>;
   }
 }
 

@@ -1,17 +1,25 @@
-const _result = {
-  current: 0
-};
+export const Calculator = (() => {
+  class Calculator {
+    _result = 0;
 
-class Calculator {
-  getResult = () => _result.current;
+    getResult = () => this._result;
 
-  sum = num => _result.current + +num;
+    sum = num => this._result + +num;
 
-  subs = num => _result.current - +num;
+    subs = num => this._result - +num;
 
-  multiply = num => _result.current * +num;
+    multiply = num => this._result * +num;
 
-  divide = num => _result.current / +num;
-}
+    divide = num => this._result / +num;
+  }
 
-export const calculator = new Calculator();
+  const { getResult, sum, subs, multiply, divide } = new Calculator();
+
+  return {
+    getResult,
+    sum,
+    subs,
+    multiply,
+    divide
+  };
+})();
