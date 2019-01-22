@@ -51,6 +51,6 @@ ul {
 @media screen and (max-width: 600px) {
   .container {
     flex-flow: column;
-    height: 350px;
+    height: 600px;
   }
 }
