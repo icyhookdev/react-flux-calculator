@@ -6,4 +6,18 @@
   font-weight: bold;
   letter-spacing: 4px;
   margin: 0.4em 0;
+  position: relative;
+  animation: showIn 1.5s;
+}
+
+@keyframes showIn {
+  0% {
+    right: 6em;
+    bottom: 2em;
+  }
+
+  100% {
+    right: 0;
+    bottom: 0;
+  }
 }

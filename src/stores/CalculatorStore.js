@@ -5,6 +5,11 @@ import { GET_RESULT, SUM_NUM } from '../actions/types';
 import { getResult, sum } from '../classes/Calculator';
 
 class CalculatorStore extends EventEmitter {
+  constructor() {
+    super();
+    this.result = getResult();
+  }
+
   handleActions = action => {
     switch (action.type) {
       case GET_RESULT:
