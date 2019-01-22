@@ -1,10 +1,10 @@
 import dispatcher from '../Dispatcher';
-import { EventEmmiter } from 'events';
+import { EventEmitter } from 'events';
 
-import { SUM_NUM } from '../actions/types';
-import { getResult } from '../actions/calculatorAction';
+import { GET_RESULT } from '../actions/types';
+import { getResult } from '../classes/Calculator';
 
-class CalculatorStore extends EventEmmiter {
+class CalculatorStore extends EventEmitter {
   constructor() {
     super();
     // this.result = 0;
@@ -12,9 +12,8 @@ class CalculatorStore extends EventEmmiter {
 
   handleActions = action => {
     switch (action.type) {
-      case SUM_NUM:
-        // this.result = action.payload;
-        this.emit('sumNum');
+      case GET_RESULT:
+        this.emit('getResult');
         break;
       default:
     }
