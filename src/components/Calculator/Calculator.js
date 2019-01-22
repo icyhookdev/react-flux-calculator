@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Calculator.module.css';
 import Button from '../Button/Button';
 
-const Calculator = ({ result, click }) => (
+const Calculator = ({ result, click, records }) => (
   <div className={classes.container}>
     <div className={classes.calculator}>
       <div className={classes.calculator__result}>{result}</div>
@@ -27,6 +27,7 @@ const Calculator = ({ result, click }) => (
     </div>
     <div className={classes.calculator__records}>
       <h1>Records</h1>
+      <ul>{records()}</ul>
     </div>
   </div>
 );

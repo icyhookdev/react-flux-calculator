@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

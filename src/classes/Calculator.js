@@ -1,5 +1,5 @@
 class Calculator {
-  _result = 0;
+  _result = '';
 
   getResult = () => this._result;
 
